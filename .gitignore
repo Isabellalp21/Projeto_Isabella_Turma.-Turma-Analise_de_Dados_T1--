@@ -1,0 +1,18 @@
+# credenciais e ambiente
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# dados brutos (baixados do Drive)
+data/
+*.zip
+*.csv
+
+# IDE / SO
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
