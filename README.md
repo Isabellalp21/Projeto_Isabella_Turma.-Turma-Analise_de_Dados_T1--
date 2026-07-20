@@ -66,3 +66,19 @@ O `DRIVE_FILE_ID` já está em `config.py`. Os CSVs ficam em `data/` (ignorada p
 | `silver_passagem` | `CHECK (valor_passagem >= 0)`, `CHECK (taxa_servico >= 0)` |
 | `silver_trecho` | `CHECK (numero_diarias >= 0)`, `UNIQUE (id_viagem, sequencia_trecho)` |
 
+Colunas calculadas em `silver_viagem`: `valor_total` e `duracao_dias`.
+
+## Melhorias futuras
+
+- Particionar carga por mês
+- Camada trusted intermediária com qualidade de dados
+- Dashboard Streamlit / Power BI em cima da Gold
+- Testes automatizados de idempotência do pipeline
+
+## Insights (após rodar o notebook)
+
+- Órgãos no topo concentram boa parte do gasto com pagamentos.
+- Destinos com alto custo médio misturam deslocamentos longos e diárias.
+- Duração máxima aponta outliers (afastamentos longos).
+- Tipo de pagamento e meio de transporte mostram o perfil operacional.
+- UFs de destino mais frequentes indicam a concentração geográfica no período.
